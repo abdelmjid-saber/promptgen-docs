@@ -1,0 +1,42 @@
+# Installation
+
+## Creating the database
+
+1.  Create a new MySQL database.
+2.  Create a new MySQL username and password.
+3.  Assign full privileges to your database username.
+
+## Uploading the files
+
+Upload what's inside the **Software** folder on the web root folder of your domain. This folder is generally called **public\_html**, **html**, or **example.com**, but depending on your server's configuration, it might be named differently.
+
+## Configuring the files
+
+Set the access permissions (CHMOD) to **775** to the following files and folders:
+
+*   Files
+    *   .env
+*   Folders
+    *   bootstrap/cache
+    *   lang
+    *   public/uploads/brand
+    *   public/uploads/users/images
+    *   storage
+    *   storage/app/purifier
+    *   storage/framework/
+    *   storage/framework/cache
+    *   storage/framework/cache/data
+    *   storage/framework/sessions
+    *   storage/framework/views
+    *   storage/logs
+
+## Changing the public directory
+
+Configure your web server's document / web root to point to the **public** directory of the software. For example, if you've uploaded the software in **example.com** folder, your web directory should be changed to **example.com/public** folder.
+
+## Finishing the installation
+
+1.  Go to **https://example.com/install** and follow the installation wizard to complete the installation.
+2.  After you've installed the software, After installing the program, log in using the default data
+
+**Email:** [admin@admin.com](mailto:admin@admin.com) **| Password:** password

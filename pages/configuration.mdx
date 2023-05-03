@@ -1,0 +1,96 @@
+## OpenAI
+
+1.  Login into your [OpenAI](https://openai.com/api/) account.
+2.  Go to the [API Keys](https://platform.openai.com/account/api-keys) section, click on Create new secret key.
+3.  Copy the **API Key** in Admin › Settings **OpenAI API Key**.
+
+## Emails
+
+1.  Go to Admin › Settings › SMTP.
+2.  Change the **Driver** field value to **SMTP**.
+3.  Fill in the rest of the fields with the SMTP credentials from your SMTP provider.
+
+## Captcha
+
+The Captcha system relies on Google reCAPTCHA's API.
+
+1.  Login into your [Google reCAPTCHA](https://www.google.com/recaptcha/admin/create) account.
+2.  [Create](https://www.google.com/recaptcha/admin/create) a new reCAPTCHA v3 Invisible Badge.
+3.  Fill all the other fields with the requested information.
+4.  Copy the **Site key** and the **Secret key** in Admin Settings Captcha.
+
+## Google Auth
+
+To work our Google social login we need to create Google App and get the credentials and attach it to our project. But if you have an existing Google app you can skip this, if not then visit this link [Google Developers Console](http://console.developers.google.com/) then follow the screen below:
+
+![laravel socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-rmZ1FRyz24x980.webp?ctm=1653147229)
+
+As you can see there is a pop-up box. Just check the **Terms of service** then click **Agree and Continue**.
+
+![laravel social login with google](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-BwJipqsNb1x980.webp?ctm=1653147385)
+
+Then click the **CREATE PROJECT** to continue.
+
+![laravel 9 socialite with google](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-CkqRTRYq4Fx980.webp?ctm=1653147453)
+
+Then input your project name and organization (you can set it as No organization) then click **CREATE**.
+
+**NOTE:** If you have a project already you can skip the above steps. And just select your current project name created previously.
+
+Now let's click the **Credentials** after creating the project or the selected project.
+
+![laravel socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-a2J60IyXsex980.webp?ctm=1653147703)
+
+Then click **\+ CREATE CREDENTIALS** button.
+
+![laravel socialite with google](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-1VlP9voAxrx980.webp?ctm=1653147760)
+
+Then click **OAuth client ID**.
+
+![laravel 9 socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-3xNNLH4oGEx980.webp?ctm=1653147841)
+
+Then click the **CONFIGURE CONSENT SCREEN**.
+
+![laravel socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-mxYA76oM5Dx980.webp?ctm=1653147972)
+
+It seems they need verification so for now to continue with this tutorial I will click the External because the Internal is not yet available for this account I'm using.
+
+![laravel socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-wvDHlnDtL4x980.webp?ctm=1653148413)
+
+If your account is new you need to finish the OAuth consent screen and provide the important details they ask for.
+
+Once the consent is finished then we will go back to the Credentials.
+
+![laravel socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-sE8aJZu30Yx980.webp?ctm=1653148610)
+
+As you can see below there is an option for Application type then you need to select Web application. Then set the name of your project/product name.
+
+Then also set your Authorized Javascript origins and Authorized redirect URIs  
+Authorized redirect URLs: http://example.com/auth/google/callback  
+Then click SAVE.
+
+![laravel socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-5oxR92BYsTx980.webp?ctm=1653148886)
+
+Then once done it will display a pop-up box for your project credentials.
+
+![laravel socialite](https://ecn-storage.s3.us-west-2.amazonaws.com/articles/laravel-9-socialite-login-with-google-complete-tutorial-onazfl5I2Tx980.webp?ctm=1653149145)
+
+Then copy the "Your Client ID" value and "Your Client Secret" value then set up it to Admin › Settings **Google**.
+
+  
+
+## Facebook Auth
+
+First we need to create Facebook App and get ID and Secret. So, let's follow bellow steps as well:
+
+Step 1: Go to Facebook Developer App to click here: [https://developers.facebook.com](https://developers.facebook.com/)
+
+Step 2: Then click to "Create App" button 
+
+Step 3: Then Choose consumer
+
+Step 4: Then Add App name as bellow, then after click to create app
+
+Step 5: Now, you will get app id and secret, Then you need to add this details to Admin › Settings **Facebook**:
+
+Step 6: If you want to upload on production then you need to specify domain as well like this [http://example.com/auth/facebook/callback](http://example.com/auth/facebook/callback) But, if you check with local then you don't need to add this urls:
