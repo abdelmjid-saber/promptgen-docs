@@ -2,10 +2,12 @@
   "index": "Introduction",
   "installation": "Installation",
   "configuration": "Configuration",
+  "localization": "Localization",
+  "set-up-your-site": "Set up your site",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "mailto:devsmix@gmail.com",
+    "href": "mailto:abdelmjid999@gmail.com",
     "newWindow": true
   }
 }
