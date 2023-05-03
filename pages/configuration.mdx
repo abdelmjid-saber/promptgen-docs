@@ -1,3 +1,42 @@
+## Stripe API
+Before we begin using Pro Plans, we need to create an account from [Stripe](https://stripe.com/) to get API keys and secret keys for Cashier.  
+  
+If you already have an account, you may skip this step. Otherwise, you may register using the button below:
+After the registration and email verification for your account.  
+  
+Go to **Developers** tab and select the **API keys** page.
+
+![stripe dashboard api keys page](https://weeklyhow.com/wp-content/uploads/2020/09/image-6-1024x449.png)
+
+Since our account is not activated, we can only use the standard keys.  
+  
+Under the standard keys section, you can copy the following keys. The **publishable key** is your API key and the **secret key** is your secret key.  
+  
+Now let’s apply these keys to our application.  
+  
+Open your `.env` file and edit the following code:
+
+    STRIPE_KEY=pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxx
+    STRIPE_SECRET=sk_test_xxxxxxxxxxxxxxxxxxxxxxxxx
+
+Make sure to replace the value with your API key and secret key.  
+  
+Don’t forget to save the `.env` file.
+
+
+## Creating a subscription
+Now that we have installed website, we can now start creating subscription plans for our users.
+
+### Create products with Stripe
+Luckily, we can all do this with our Stripe account so login to our Stripe dashboard and navigate to the **products page** and click the **Add Product** button.
+
+![stripe](https://weeklyhow.com/wp-content/uploads/2020/09/image-8.png)
+[![stripe](https://weeklyhow.com/wp-content/uploads/2020/09/image-18.png)
+A form should pop up as soon as you press the add product button.
+* GO to Settings -> SEO Configuration
+* Update the Stripe ID, Billing Period and the price to match the values currently set in Stripe.
+Once you’re done filling up the form, you can save by clicking the Save 
+
 ## Emails
 
 1.  Go to Admin › Settings › SMTP.
